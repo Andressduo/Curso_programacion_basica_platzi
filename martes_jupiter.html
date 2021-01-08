@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Peso en otros planetas  </title>
+<style type="text/css"></style>
+<body>
+
+</body>
+    <h1>Tu peso en otros planetas</h1>
+    <p>En la tierra pesas distinto que en Martes o Jupiter  </p>
+<Script>
+    var usuario =prompt("cual es tu peso");
+
+    var planeta=prompt("Elige un planeta.\n1 martes, 2 jupiter");
+    var peso=parseInt(usuario);
+    var g_tierra=9.8;
+    var g_martes=3.7;
+    var g_jupiter=24.8;
+    var caso;
+    
+    var peso_final;
+    if(planeta==1){
+     caso="martes";   
+    peso_final=peso*g_martes/g_tierra;
+    
+
+    }
+    else if(planeta==2){
+        caso="jupiter";
+        peso_final=peso*g_jupiter   /g_tierra;
+    
+    }
+    else 
+    document.write("obcion no valida    ");
+
+    peso_final=parseInt(peso_final);
+    document.write("¿sera que funciono? mi peso en "+ caso +" es <strong> "+
+                    peso_final+" kilogramos</strong>");
+    
+</Script>
+</body>
+
+</head>
